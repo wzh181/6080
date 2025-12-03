@@ -1,0 +1,23 @@
+/* Global styles */
+body {
+  margin: 0;
+}
+
+/* Navigation responsive styles */
+.nav-long {
+  display: inline;
+}
+
+.nav-short {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .nav-long {
+    display: none;
+  }
+
+  .nav-short {
+    display: inline;
+  }
+}
