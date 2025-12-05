@@ -1,0 +1,23 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  margin-top: 80px;  /* Header高度 */
+  margin-bottom: 50px; /* Footer高度 */
+  min-height: calc(100vh - 130px);
+  padding: 20px;
+}
+
+/* 移动端 */
+@media (max-width: 800px) {
+  .main-content {
+    margin-top: 60px;  /* 移动端Header高度 */
+    margin-bottom: 40px; /* 移动端Footer高度 */
+    min-height: calc(100vh - 100px);
+    padding: 10px;
+  }
+}
+

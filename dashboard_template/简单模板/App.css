@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  height: 80px;
+  background: #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.long {
+  display: inline;
+}
+
+.short {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  height: 50px;
+  background: #999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Content */
+.content {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  min-height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dashboard */
+.dashboard {
+  text-align: center;
+}
+
+.text {
+  font-size: 2em;
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* 移动端 */
+@media (max-width: 800px) {
+  .header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .long {
+    display: none;
+  }
+
+  .short {
+    display: inline;
+  }
+
+  .content {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    min-height: calc(100vh - 100px);
+  }
+
+  .footer {
+    height: 40px;
+  }
+}
+

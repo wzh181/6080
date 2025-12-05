@@ -14,13 +14,17 @@ const Dashboard=(props)=>{
     })
   }
 
-  return(
-    <div className='dashboard'>
-      <div className='dash-first'>Please choose an option from the navbar</div>
-      <div>games won:{props.numWon}</div>
-      <button onClick={()=>reset(props.setnumWon)}>reset</button>
+  return (
+    <div className="dashboard">
+      <div className="dash-first">Please choose an option from the navbar</div>
+      <div className="dashboard-score">
+        Games won: <span className="score-number">{props.numWon}</span>
+      </div>
+      <button onClick={() => reset(props.setnumWon)} className="reset-button">
+        (reset)
+      </button>
     </div>
-  )
+  );
 }
 
 export default Dashboard
