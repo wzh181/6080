@@ -1,0 +1,54 @@
+.home-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 50px;
+  padding-right: 100px;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-text {
+  color: blue;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home-score {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.reset-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .home-container {
+    padding-right: 60px;
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .home-container {
+    padding-right: 30px;
+  }
+}
+

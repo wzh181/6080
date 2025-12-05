@@ -1,0 +1,87 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.sidebar-logo {
+  width: 50px;
+  height: 50px;
+  margin: 15px auto;
+  display: block;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.sidebar-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar-link:hover {
+  background-color: #ddd;
+}
+
+.sidebar-link.active {
+  background-color: #ccc;
+}
+
+.sidebar-text {
+  display: block;
+}
+
+.sidebar-short {
+  display: none;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .sidebar {
+    width: 60px;
+  }
+  
+  .sidebar-text {
+    display: none;
+  }
+  
+  .sidebar-short {
+    display: block;
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .sidebar {
+    width: 30px;
+  }
+  
+  .sidebar-logo {
+    display: none;
+  }
+  
+  .sidebar-text {
+    display: none;
+  }
+  
+  .sidebar-short {
+    display: block;
+    font-size: 12px;
+  }
+}
+

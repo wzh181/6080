@@ -1,0 +1,26 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: 60px;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .main-content {
+    margin-top: 50px;
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .main-content {
+    margin-top: 40px;
+  }
+}
+

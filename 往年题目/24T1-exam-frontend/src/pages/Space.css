@@ -1,0 +1,40 @@
+.space-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 50px;
+  padding-right: 100px;
+}
+
+.space-game {
+  position: relative;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.space-shooter {
+  position: absolute;
+  background-color: red;
+}
+
+.space-invader {
+  position: absolute;
+  background-color: black;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .space-container {
+    padding-right: 60px;
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .space-container {
+    padding-right: 30px;
+  }
+}
+

@@ -1,0 +1,69 @@
+.memory-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 50px;
+  padding-right: 100px;
+}
+
+.memory-top {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+.memory-button {
+  flex: 1;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #0056b3;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.memory-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.memory-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.memory-bottom {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.instruction-box {
+  width: 20px;
+  height: 20px;
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .memory-container {
+    padding-right: 60px;
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .memory-container {
+    padding-right: 30px;
+  }
+}
+

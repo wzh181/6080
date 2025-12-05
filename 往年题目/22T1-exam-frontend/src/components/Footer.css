@@ -1,0 +1,24 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: calc(100% - 100px);
+  background-color: #999;
+  z-index: 999;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .footer {
+    width: calc(100% - 60px);
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .footer {
+    width: calc(100% - 30px);
+  }
+}
+

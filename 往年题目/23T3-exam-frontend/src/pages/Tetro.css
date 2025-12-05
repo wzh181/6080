@@ -1,0 +1,43 @@
+.tetro-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 130px);
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tetro-grid {
+  display: grid;
+  width: 100%;
+  max-width: calc(100vw - 40px);
+  height: calc(100vh - 230px);
+  margin-bottom: 100px;
+  border: 1px solid #333;
+}
+
+.tetro-cell {
+  border: 1px solid #333333;
+  background-color: transparent;
+}
+
+.tetro-reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+}
+
+.tetro-reset-button:hover {
+  background-color: #c82333;
+}
+

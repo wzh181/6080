@@ -1,0 +1,83 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fc8;
+  color: #000;
+  border-bottom: 1px solid #654;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-links a.active {
+  font-weight: bold;
+}
+
+.nav-long {
+  display: inline;
+}
+
+.nav-short {
+  display: none;
+}
+
+.nav-gap {
+  width: 20px;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .navbar {
+    height: 50px;
+  }
+  
+  .nav-long {
+    display: none;
+  }
+  
+  .nav-short {
+    display: inline;
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .navbar {
+    height: 40px;
+  }
+  
+  .nav-long {
+    display: none;
+  }
+  
+  .nav-short {
+    display: inline;
+  }
+}
+

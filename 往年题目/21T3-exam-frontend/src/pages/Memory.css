@@ -1,0 +1,55 @@
+.memory-container {
+  flex: 1;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  padding-bottom: 100px;
+  gap: 20px;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 80vmin;
+  max-width: 500px;
+  aspect-ratio: 1;
+  gap: 5px;
+}
+
+.memory-cell {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(255, 255, 0);
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.memory-cell.flashed {
+  background-color: #999;
+}
+
+.memory-cell.error {
+  background-color: red;
+}
+
+.memory-start-button,
+.memory-reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.memory-start-button:hover,
+.memory-reset-button:hover {
+  background-color: #0056b3;
+}
+

@@ -1,0 +1,111 @@
+.flappy-bird-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  padding-top: 60px;
+  position: relative;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+}
+
+.goal-text {
+  font-size: 1rem;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+
+.gameplay-preview,
+.gameplay-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: #eee;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+.bird {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.obstacle {
+  position: absolute;
+  width: 70px;
+  background-color: green;
+}
+
+.start-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: black;
+  pointer-events: none;
+}
+
+.score-display {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.end-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.end-game p {
+  font-size: 1.5rem;
+}
+
+.click-to-return {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .gameplay-preview,
+  .gameplay-screen {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .flappy-bird-container {
+    padding-top: 50px;
+    min-height: calc(100vh - 50px);
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .flappy-bird-container {
+    padding-top: 40px;
+    min-height: calc(100vh - 40px);
+  }
+}
+

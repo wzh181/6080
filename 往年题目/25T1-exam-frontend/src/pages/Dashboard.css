@@ -1,0 +1,54 @@
+.dashboard-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+  padding-top: 60px;
+}
+
+.dashboard-content {
+  text-align: center;
+}
+
+.dashboard-text {
+  color: #fc8;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.dashboard-counter {
+  color: red;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.dashboard-reset-button {
+  font-size: 3em;
+  color: brown;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.dashboard-reset-button:hover {
+  text-decoration: underline;
+}
+
+/* 屏幕宽度 < 1400px */
+@media (max-width: 1400px) {
+  .dashboard-container {
+    padding-top: 50px;
+    min-height: calc(100vh - 50px);
+  }
+}
+
+/* 屏幕宽度 < 800px */
+@media (max-width: 800px) {
+  .dashboard-container {
+    padding-top: 40px;
+    min-height: calc(100vh - 40px);
+  }
+}
+

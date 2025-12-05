@@ -1,0 +1,40 @@
+.dashboard-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 130px);
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.dashboard-content {
+  text-align: center;
+}
+
+.dashboard-text {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.dashboard-score {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.reset-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
