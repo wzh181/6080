@@ -1,0 +1,110 @@
+.dashboard {
+  width: 100%;
+  min-height: calc(100vh - 130px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.dashboard-text {
+  font-size: 2em;
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dashboard-score {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+}
+
+.score-number {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+.reset-button:active {
+  transform: scale(0.98);
+}
+
+/* 响应式设计 - 平板 */
+@media (max-width: 1400px) {
+  .dashboard {
+    min-height: calc(100vh - 120px);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .dashboard-text {
+    font-size: 1.8em;
+  }
+
+  .dashboard-score {
+    font-size: 1.3em;
+  }
+}
+
+/* 响应式设计 - 移动端 */
+@media (max-width: 800px) {
+  .dashboard {
+    min-height: calc(100vh - 100px);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .dashboard-text {
+    font-size: 1.5em;
+  }
+
+  .dashboard-score {
+    font-size: 1.2em;
+  }
+
+  .reset-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* 响应式设计 - 小屏移动端 */
+@media (max-width: 480px) {
+  .dashboard {
+    min-height: calc(100vh - 80px);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .dashboard-text {
+    font-size: 1.2em;
+  }
+
+  .dashboard-score {
+    font-size: 1em;
+  }
+
+  .reset-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
