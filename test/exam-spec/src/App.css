@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.main-body {
+  background-color: #000;
+  color: #fff;
+  min-height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+@media (max-width: 1400px) {
+  .app {
+    padding-bottom: 80px;
+  }
+  .main-body {
+    min-height: calc(100vh - 80px);
+  }
+}
+
+@media (max-width: 800px) {
+  .app {
+    padding-bottom: 60px;
+  }
+  .main-body {
+    min-height: calc(100vh - 60px);
+  }
+}
